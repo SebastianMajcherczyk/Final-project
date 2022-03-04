@@ -1,0 +1,17 @@
+$fa-font-path: "../node_modules/font-awesome/fonts";
+
+//Colors
+$first-color: #041366;
+$second-color: #FEA600;
+$third-color: #dcdcdc;
+$fourth-color: #B9B9B9;
+
+//Fonts and icons
+$primary-font: Roboto, sans-serif;
+$gear: '/media';
+//Mixins
+@mixin firstTransition() {
+  transition-duration: 1s;
+  transition-delay: 0.2s;
+  transition-timing-function: ease-out;
+}

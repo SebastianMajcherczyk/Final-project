@@ -1,0 +1,49 @@
+@import "variables";
+//@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+//@import '~@fortawesome/fontawesome-free/scss/solid';
+
+.gear {
+  width: 50px;
+  height: 50px;
+  color: orange;
+  padding: 5px 0;
+}
+.service {
+  //border: 2px solid $third-color;
+  height: 100%;
+
+  h3 {
+    //@extend %fa-icon;
+    //@extend .fa-solid;
+    //
+    //&:before{
+    //  content: fa-content($fa-var-user);
+    //}
+    //color: $first-color;
+    //font-size: 2.5em;
+    //font-weight: 500;
+    //margin: 0 0 1em;
+  }
+
+  .serviceButtons {
+    border: 2px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    h4{
+      font-size: 1.3em;
+      }
+
+
+    a {
+      width: 40%;
+      height: 100% ;
+      border: 2px solid $third-color;
+    }
+
+  }
+}
