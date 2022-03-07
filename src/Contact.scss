@@ -1,0 +1,59 @@
+//@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+//@import '~@fortawesome/fontawesome-free/scss/solid';
+
+
+.Contact {
+  width: 1000px;
+    display: flex;
+
+  .contact-form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    ::placeholder{
+      font-family: Raleway, sans-serif;
+
+    }
+    input, textarea {
+      background-color: rgba(209, 210, 219, 0.37);
+      border: 0;
+      padding: 10px 10px;
+      margin-bottom: 10px;
+    }
+    [type='submit']{
+      background-color: $first-color;
+      font-size: 1.2em;
+      color: white;
+      transition: 1s;
+      border: 0;
+      width: 200px;
+      margin-left: 0;
+      &:hover{
+        background-color: $second-color;
+      }
+    }
+    [name="message"]{
+      height: 150px;
+    }
+  }
+  .contact-data {
+    color: $fifth-color;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 30px;
+    p {
+      text-align: left;
+      line-height: 1.5em;
+    }
+    .contact-list{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      line-height: 2em;
+    }
+
+  }
+
+}

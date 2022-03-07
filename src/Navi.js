@@ -9,19 +9,19 @@ const Navi = () => {
                           <a href="#" className="naviLink" id="home"> Home</a>
                         </li>
                         <li>
-                          <a href="#" className="naviLink transition">About</a>
+                          <a href="#about" className="naviLink transition">About</a>
                         </li>
                         <li>
-                          <a href="#" className="naviLink transition">Services</a>
+                          <a href="#services" className="naviLink transition">Services</a>
                         </li>
                         <li>
-                          <a href="#" className="naviLink transition">Gallery</a>
+                          <a href="#gallery" className="naviLink transition">Gallery</a>
                         </li>
+                        {/*<li>*/}
+                        {/*  <a href="#team" className="naviLink transition">Team</a>*/}
+                        {/*</li>*/}
                         <li>
-                          <a href="#" className="naviLink transition">Team</a>
-                        </li>
-                        <li>
-                          <a href="#" className="naviLink transition">Contact</a>
+                          <a href="#contact" className="naviLink transition">Contact</a>
                         </li>
                     </ul>
             </div>
