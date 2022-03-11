@@ -1,30 +1,44 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+import { HashLink} from "react-router-hash-link";
 
 const Navi = () => {
     return(
 
-            <div className="container">
+            <nav className="container">
                     <ul className="navi">
                         <li >
-                          <a href="#" className="naviLink" id="home"> Home</a>
+                            <Link to='/home'>
+                                <span className="a naviLink"> Home</span>
+                            </Link>
                         </li>
                         <li>
-                          <a href="#about" className="naviLink transition">About</a>
+                        <HashLink to='/home#about'>
+                            <span className="a naviLink"> O firmie</span>
+                        </HashLink>
                         </li>
                         <li>
-                          <a href="#services" className="naviLink transition">Services</a>
+                            <HashLink to='/home#services'>
+                                <span className="a naviLink"> Usługi</span>
+                            </HashLink>
                         </li>
                         <li>
-                          <a href="#gallery" className="naviLink transition">Gallery</a>
+                          <HashLink to='/home#gallery'>
+                          <span className="a naviLink"> Galeria</span>
+                        </HashLink>
                         </li>
-                        {/*<li>*/}
-                        {/*  <a href="#team" className="naviLink transition">Team</a>*/}
-                        {/*</li>*/}
                         <li>
-                          <a href="#contact" className="naviLink transition">Contact</a>
+                            <HashLink to='/home#contact'>
+                                <span className="a naviLink">Kontakt</span>
+                            </HashLink>
+                        </li>
+                        <li>
+                        <Link to='/rates'>
+                          <span className="a naviLink transition"> Kursy walut</span>
+                        </Link>
                         </li>
                     </ul>
-            </div>
+            </nav>
     )
 }
 export {Navi};

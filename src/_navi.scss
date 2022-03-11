@@ -16,29 +16,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
+  height: 60px;
   flex-grow: 1 ;
   margin: 3px;
   background-color: #fff;
   @include firstTransition;
-  a{
+  .a {
     color: #000;
     @include firstTransition;
 
   };
 
-
-}
-
+};
 .navi li:hover {
-  content: '';
-  background-color: #fea600;
-  a{
+
+  background-color: $second-color;
+  .a{
     color: white;
   }
 
 }
 
 .navi li:first-child{
-  background-color: #fea600;
+  background-color: $second-color;
 }

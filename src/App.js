@@ -1,33 +1,34 @@
 
 import React, {useEffect} from "react";
 import './App.scss';
+import  {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import {Header} from "./Header";
 import {Navi} from "./Navi";
-import {Banner} from "./Banner";
-import {About} from "./About";
-import {Services} from "./services";
-import {Gallery} from "./Gallery";
-import {Calendar} from "./Calendar";
-import {Contact} from "./Contact";
+import {ExchangeRates} from "./ExchangeRates";
+import {Components} from "./Components";
+
 
 
 
 function App() {
+
     useEffect(() => {
         document.title = "Franz Kruger"
     }, [])
   return (
       <>
-    <div className="App">
-            <Header/>
-            <Navi/>
-            <Banner/>
-            <About/>
-            <Services/>
-            <Gallery/>
-            {/*<Calendar/>*/}
-            <Contact/>
-        </div>
+        <Router>
+            <div className="App">
+                <Header/>
+                <Navi/>
+
+                    <Switch>
+                        <Route exact path="/home"  component={Components}/>
+                        <Route exact path="/rates"  component={ExchangeRates}/>
+                    </Switch>
+
+                </div>
+        </Router>
       </>
   );
 }
