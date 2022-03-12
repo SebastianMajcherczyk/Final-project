@@ -14,7 +14,7 @@ const About = () => {
                 <div className="abt-top">
                 <div className=" ab-lft">
                     <h4>Przykładowe realizacje indywidualne.</h4>
-                    <p>   1. Import faktur zakupu i sprzedaży
+                    <p> 1. Import faktur zakupu i sprzedaży
                         2. Import dokumentów magazynowych
                         3. Import wyciągów bankowych
                         4. Zestawienia wysyłane cyklicznie do ustalonych odbiorców

@@ -8,27 +8,27 @@ const Navi = () => {
             <nav className="container">
                     <ul className="navi">
                         <li >
-                            <Link to='/home'>
+                            <Link to='/'>
                                 <span className="a naviLink"> Home</span>
                             </Link>
                         </li>
                         <li>
-                        <HashLink to='/home#about'>
+                        <HashLink to='/#about'>
                             <span className="a naviLink"> O firmie</span>
                         </HashLink>
                         </li>
                         <li>
-                            <HashLink to='/home#services'>
+                            <HashLink to='/#services'>
                                 <span className="a naviLink"> Usługi</span>
                             </HashLink>
                         </li>
                         <li>
-                          <HashLink to='/home#gallery'>
+                          <HashLink to='/#gallery'>
                           <span className="a naviLink"> Galeria</span>
                         </HashLink>
                         </li>
                         <li>
-                            <HashLink to='/home#contact'>
+                            <HashLink to='/#contact'>
                                 <span className="a naviLink">Kontakt</span>
                             </HashLink>
                         </li>

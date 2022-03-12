@@ -23,7 +23,7 @@ function App() {
                 <Navi/>
 
                     <Switch>
-                        <Route exact path="/home"  component={Components}/>
+                        <Route exact path="/"  component={Components}/>
                         <Route exact path="/rates"  component={ExchangeRates}/>
                     </Switch>
 
