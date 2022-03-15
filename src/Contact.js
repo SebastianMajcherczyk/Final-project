@@ -22,10 +22,10 @@ const Contact = () =>  {
     const onSubmit = (e) => {
         e.preventDefault();
         send(
-            'service_4mepefu',
-            'template_1gx1hd1',
+            process.env.REACT_APP_serviceID,
+            process.env.REACT_APP_templateID,
             toSend,
-            '0_hFtmnSF5T_xAT1m'
+            process.env.REACT_APP_userID
         )
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
