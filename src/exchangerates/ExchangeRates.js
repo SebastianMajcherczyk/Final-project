@@ -6,7 +6,7 @@ const ExchangeRates = () => {
 
 
     useEffect(() => {
-        fetch('http://api.nbp.pl/api/exchangerates/tables/a/?format=json')
+        fetch('https://api.nbp.pl/api/exchangerates/tables/a/?format=json')
 
             .then((response) => {
                 if (response.ok === true) return response.json()
