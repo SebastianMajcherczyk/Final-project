@@ -1,6 +1,6 @@
-@import "variables";
+@import "src/variables";
 $fa-font-path: "~font-awesome/fonts";
-@import "~font-awesome/scss/font-awesome";
+@import "../../node_modules/font-awesome/scss/font-awesome";
 
 
 .header {
@@ -16,11 +16,17 @@ $fa-font-path: "~font-awesome/fonts";
       align-items: center;
       font-size: 18px;
       font-weight: 500;
-      max-width: 80vw;
+      //max-width: 80vw;
       img {
         height: 70px;
         width: auto;
       }
+  }
+}
+
+@media (max-width: $first-mediabreakpoint) {
+  .container {
+    width: 100vw;
   }
 }
 .btn-search {

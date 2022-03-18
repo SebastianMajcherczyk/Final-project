@@ -1,0 +1,48 @@
+@import "./src/variables";
+
+.mobile-navbar{
+  display: none;
+}
+
+.nav-btn{
+  width: 20%;
+  background-color: $first-color;
+  color: #fff;
+  padding: 10px;
+  border: 0;
+  margin: 3px;
+}
+
+@media (max-width: $first-mediabreakpoint) {
+
+  .mobile-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .mobilenavi {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      li{
+        width: 100%;
+        padding: 7px;
+      }
+
+    }
+  }
+}
+
+.mobilenavi li:first-child{
+  background-color: $second-color;
+}
+
+.menuItem {
+  display: block;
+  text-align: center;
+
+}

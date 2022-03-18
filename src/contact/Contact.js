@@ -1,10 +1,12 @@
-// import './App.css';
+
 import { useState } from 'react';
 import { send } from 'emailjs-com';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLocationDot} from "@fortawesome/free-solid-svg-icons";
 import {faPhone} from "@fortawesome/free-solid-svg-icons";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import './Contact.scss';
+
 
 
 const Contact = () =>  {
@@ -45,7 +47,7 @@ const Contact = () =>  {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
     };
     return (
-        <div className="Contact container" id="contact">
+        <div className="contact container" id="contact">
             <form onSubmit={onSubmit} className="contact-form">
                 <input
                     type='text'

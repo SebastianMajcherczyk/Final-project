@@ -1,11 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from 'react-router-dom';
 import { HashLink} from "react-router-hash-link";
+import './navi.scss';
 
 const Navi = () => {
     return(
 
-            <nav className="container">
+            <nav className="navbar container">
                     <ul className="navi">
                         <li >
                             <Link to='/'>
@@ -34,7 +35,7 @@ const Navi = () => {
                         </li>
                         <li>
                         <Link to='/rates'>
-                          <span className="a naviLink transition"> Kursy walut</span>
+                          <span className="a naviLink"> Kursy walut</span>
                         </Link>
                         </li>
                     </ul>
@@ -42,3 +43,4 @@ const Navi = () => {
     )
 }
 export {Navi};
+

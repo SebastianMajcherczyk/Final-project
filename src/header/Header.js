@@ -1,7 +1,8 @@
-import LogoFK from './media/LogoFK.png';
+import LogoFK from './LogoFK.png';
 import {faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import React from "react";
+import './header.scss';
 
 const SearchBar = () => (
     <form action="/" method="get" className="search">
@@ -19,7 +20,7 @@ const SearchBar = () => (
 const Header = () => {
 
     return (
-        <header className={"header"}>
+        <header className="header">
             <div className="container">
                 <img src={LogoFK} alt={"Logo Franz Kruger"}/>
                 <div>

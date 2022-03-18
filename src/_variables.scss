@@ -8,6 +8,9 @@ $fourth-color: #B9B9B9;
 $fifth-color: #a1a1a1;
 $sixth-color: rgba(255, 193, 7, 0.66);
 
+//Media breakpoints
+$first-mediabreakpoint: 768px;
+
 
 //Fonts and icons
 $primary-font: Roboto, sans-serif;
@@ -18,3 +21,6 @@ $gear: '/media';
   transition-delay: 0.2s;
   transition-timing-function: ease-out;
 }
+
+
+

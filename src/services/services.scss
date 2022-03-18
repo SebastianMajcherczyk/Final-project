@@ -1,6 +1,5 @@
-@import "variables";
-//@import '~@fortawesome/fontawesome-free/scss/fontawesome';
-//@import '~@fortawesome/fontawesome-free/scss/solid';
+@import "src/variables";
+
 
 .gear {
   width: 100px;
@@ -9,8 +8,8 @@
   padding: 10px 0;
 }
 .service {
-  //border: 2px solid $third-color;
   height: 100%;
+  text-align: center;
 
   h3 {
     font-family: Raleway, sans-serif;

@@ -1,9 +1,8 @@
-//@import '~@fortawesome/fontawesome-free/scss/fontawesome';
-//@import '~@fortawesome/fontawesome-free/scss/solid';
+@import "src/variables";
 
 
-.Contact {
-  width: 1000px;
+.contact {
+  width: 95%;
     display: flex;
 
   .contact-form {
@@ -56,4 +55,14 @@
 
   }
 
+}
+
+@media (max-width: $first-mediabreakpoint) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    .contact-form, .contact-data{
+      width: 95%;
+    }
+  }
 }
