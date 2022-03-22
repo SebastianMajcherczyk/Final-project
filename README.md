@@ -2,7 +2,8 @@
 
 
 ![Last commit](https://img.shields.io/github/last-commit/SebastianMajcherczyk/Final-project)
-https://img.shields.io/tokei/lines/github/SebastianMajcherczyk/Final-Project
+![Code lines](https://img.shields.io/tokei/lines/github/SebastianMajcherczyk/Final-Project)
+![Code size](https://img.shields.io/github/languages/code-size/SebastianMajcherczyk/Final-project)
 
 >This is the final project created at the end of JavaScript Developer bootcamp at CodersLab.
 >The app is created basing on Create-React-App It is constantly developed to reach the final functionality.
