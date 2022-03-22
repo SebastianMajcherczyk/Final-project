@@ -1,7 +1,7 @@
 # Final Project
 
 
-[![Last commit](https://img.shields.io/github/last-commit/SebastianMajcherczyk/Final-project)]
+![Last commit](https://img.shields.io/github/last-commit/SebastianMajcherczyk/Final-project)
 https://img.shields.io/tokei/lines/github/SebastianMajcherczyk/Final-Project
 
 >This is the final project created at the end of JavaScript Developer bootcamp at CodersLab.
