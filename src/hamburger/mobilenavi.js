@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import './mobilenavi.scss';
 import {Link} from "react-router-dom";
 import {HashLink} from "react-router-hash-link";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faBars, faGear} from "@fortawesome/free-solid-svg-icons";
 
 
 const Mobilenavi = () => {
@@ -10,7 +12,7 @@ const Mobilenavi = () => {
 
     return(
         <nav className="mobile-navbar">
-            <button className="nav-btn" onClick={changeMenu}>MENU</button>
+            <button className="nav-btn" onClick={changeMenu}><FontAwesomeIcon icon={faBars} /></button>
             {menuOpen && (
             <ul className="mobilenavi">
                 <li >

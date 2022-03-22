@@ -5,12 +5,12 @@
 }
 
 .nav-btn{
-  width: 20%;
-  background-color: $first-color;
-  color: #fff;
-  padding: 10px;
+  font-size: 25px;
+  color: $first-color;
+  background-color: #fff;
+  padding: 4px;
   border: 0;
-  margin: 3px;
+  //margin: 3px;
 }
 
 @media (max-width: $first-mediabreakpoint) {
