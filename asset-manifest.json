@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Final-project/static/css/main.e6efe4ed.css",
-    "main.js": "/Final-project/static/js/main.77b20b2e.js",
+    "main.css": "/Final-project/static/css/main.47bc47ab.css",
+    "main.js": "/Final-project/static/js/main.5bb89aea.js",
     "static/js/787.0fe84981.chunk.js": "/Final-project/static/js/787.0fe84981.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/Final-project/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/banner.jpg": "/Final-project/static/media/banner.96f77500a6b36b76b4e9.jpg",
@@ -19,12 +19,12 @@
     "static/media/5.jpg": "/Final-project/static/media/5.b77b68acf0736d3a1b5f.jpg",
     "static/media/LogoFK.png": "/Final-project/static/media/LogoFK.0599145ca1385dcea394.png",
     "index.html": "/Final-project/index.html",
-    "main.e6efe4ed.css.map": "/Final-project/static/css/main.e6efe4ed.css.map",
-    "main.77b20b2e.js.map": "/Final-project/static/js/main.77b20b2e.js.map",
+    "main.47bc47ab.css.map": "/Final-project/static/css/main.47bc47ab.css.map",
+    "main.5bb89aea.js.map": "/Final-project/static/js/main.5bb89aea.js.map",
     "787.0fe84981.chunk.js.map": "/Final-project/static/js/787.0fe84981.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6efe4ed.css",
-    "static/js/main.77b20b2e.js"
+    "static/css/main.47bc47ab.css",
+    "static/js/main.5bb89aea.js"
   ]
 }
