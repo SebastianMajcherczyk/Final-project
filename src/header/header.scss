@@ -12,6 +12,7 @@ $fa-font-path: "~font-awesome/fonts";
     .container{
       margin: auto;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-around;
       align-items: center;
       font-size: 18px;
