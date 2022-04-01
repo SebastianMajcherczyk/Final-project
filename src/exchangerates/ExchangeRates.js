@@ -29,7 +29,7 @@ const ExchangeRates = () => {
                     <div className="exchange-table">
                         <table>
                             <thead>
-                            <tr><th colspan = '3'> Kursy średnie NBP z dnia: {tableDate}</th></tr>
+                            <tr><th colSpan = '3'> Kursy średnie NBP z dnia: {tableDate}</th></tr>
                             <tr>
                                 <th>Waluta</th>
                                 <th>Symbol</th>

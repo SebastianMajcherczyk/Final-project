@@ -8,9 +8,30 @@
   font-size: 25px;
   color: $first-color;
   background-color: #fff;
-  padding: 4px;
+  padding: 0 50vw 0 50vw;
   border: 0;
   //margin: 3px;
+}
+
+@keyframes show {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+
+}
+
+@keyframes hide {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+
 }
 
 @media (max-width: $first-mediabreakpoint) {
@@ -22,11 +43,17 @@
 
     .mobilenavi {
       width: 100%;
+      transform: translateY(-100%);
+      animation: show;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
       padding: 0;
       margin: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
+      position: relative;
+      z-index: -1;
 
       li{
         width: 100%;

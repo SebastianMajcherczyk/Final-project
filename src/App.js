@@ -1,5 +1,5 @@
 
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import './App.scss';
 import  {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 import {Header} from "./header/Header";
@@ -9,19 +9,42 @@ import {Main_Page} from "./mainpage/Main_Page";
 import {Mobilenavi} from "./hamburger/mobilenavi";
 
 const CustomRedirect = () => <Redirect path="/"/>
-
+const breakValue = 768;
 function App() {
 
+    const [menuType, setMenuType] = useState(window.innerWidth > breakValue ? 'full' : 'mobile');
     useEffect(() => {
         document.title = "Franz Kruger"
+    }, [])
+
+    useEffect(() => {
+        const resizeListener = () => {
+
+            const newNavType = window.innerWidth > breakValue ? 'full' : 'mobile';
+            setMenuType(newNavType)
+            //console.log(menuType, newNavType)
+            //if(menuType !== newNavType){
+              //  setMenuType((prevState) => {
+               //     console.log(prevState, newNavType);
+                //    return newNavType
+               // });
+           // }
+        }
+
+        window.addEventListener('resize', resizeListener);
+
+        return () => {
+            window.removeEventListener('resize', resizeListener)
+        }
     }, [])
   return (
       <>
         <Router>
             <div className="App">
+
                 <Header/>
-                <Navi/>
-                <Mobilenavi/>
+                { menuType === 'full' ? <Navi/> : <Mobilenavi/>}
+
 
                     <Switch>
                         <Route exact path="/"  component={Main_Page}/>
