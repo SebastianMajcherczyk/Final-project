@@ -4,11 +4,12 @@ $fa-font-path: "~font-awesome/fonts";
 
 
 .header {
-
+  position: relative;
   margin: auto;
   padding: 10px;
   color: #fff;
   background-color: $first-color;
+  z-index: 5;
     .container{
       margin: auto;
       display: flex;
@@ -21,6 +22,7 @@ $fa-font-path: "~font-awesome/fonts";
       img {
         height: 70px;
         width: auto;
+
       }
   }
 }
