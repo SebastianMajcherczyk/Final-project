@@ -1,8 +1,5 @@
 @import "./src/variables";
 
-.mobile-navbar{
-  display: none;
-}
 
 .nav-btn{
   font-size: 25px;
@@ -10,13 +7,30 @@
   background-color: #fff;
   padding: 0 50vw 0 50vw;
   border: 0;
-  //margin: 3px;
+  position: relative;
+  z-index: 5;
+}
+
+@keyframes extend {
+
+  to {
+    max-height: 300px;
+  }
+
+}
+
+@keyframes shrink {
+  from {
+    max-height: 308px;
+  }
+
+  to {
+    max-height: 28px;
+  }
+
 }
 
 @keyframes show {
-  from {
-    transform: translateY(-100%);
-  }
 
   to {
     transform: translateY(0);
@@ -29,10 +43,12 @@
     transform: translateY(0);
   }
   to {
-    transform: translateY(-50%);
+    transform: translateY(-120%);
   }
 
 }
+
+
 
 @media (max-width: $first-mediabreakpoint) {
 
@@ -41,13 +57,26 @@
     flex-direction: column;
     align-items: center;
     z-index: 1;
+    max-height: 28px;
+    overflow: hidden;
+
+    &.open {
+      animation: extend;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+
+    }
+
+    &.hidden {
+      animation: shrink;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+    }
 
     .mobilenavi {
       width: 100%;
-      transform: translateY(-100%);
-      animation: show;
-      animation-duration: 2s;
-      animation-fill-mode: forwards;
+      transform: translateY(-120%);
+
       padding: 0;
       margin: 0;
       display: flex;
@@ -55,17 +84,38 @@
       align-items: center;
       position: relative;
 
+      // Menu nasuwa się na content poniżej//
+        //position: absolute;
+        ///* top: -20px; */
+        //margin-top: 28px;
+        //background: white;
 
+
+
+      &.hidden {
+        animation: hide;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+
+
+      }
+
+      &.open {
+        animation: show;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+      }
 
       li{
         width: 100%;
         padding: 7px;
 
+
       }
 
     }
-  }
-}
+
+}}
 
 .mobilenavi li:first-child{
   background-color: $second-color;

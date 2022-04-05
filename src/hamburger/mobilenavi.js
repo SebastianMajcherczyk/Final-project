@@ -3,18 +3,21 @@ import './mobilenavi.scss';
 import {Link} from "react-router-dom";
 import {HashLink} from "react-router-hash-link";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBars, faGear} from "@fortawesome/free-solid-svg-icons";
+import {faBars, faGear, faXmark} from "@fortawesome/free-solid-svg-icons";
+
 
 
 const Mobilenavi = () => {
-    const [menuOpen, setMenuOpen] = useState(false)
-    const changeMenu = () => { setMenuOpen(!menuOpen) }
+    const [menuOpen, setMenuOpen] = useState(undefined);
+    const changeMenu = () => {
+        setMenuOpen(!menuOpen);
+    }
 
     return(
-        <nav className="mobile-navbar">
-            <button className="nav-btn" onClick={changeMenu}><FontAwesomeIcon icon={faBars} /></button>
-            {menuOpen && (
-            <ul className="mobilenavi">
+        <nav className={`mobile-navbar ${menuOpen === undefined ? '' : menuOpen ? 'open' : 'hidden'}`}>
+            <button className="nav-btn" onClick={changeMenu}><FontAwesomeIcon icon={menuOpen  ? faXmark : faBars} /></button>
+
+            <ul className={`mobilenavi ${menuOpen === undefined ? '' : menuOpen ? 'open' : 'hidden'}`} >
                 <li >
                     <Link to='/' className='menuItem'>
                         <span className="a naviLink"> Home</span>
@@ -45,7 +48,7 @@ const Mobilenavi = () => {
                         <span className="a naviLink transition"> Kursy walut</span>
                     </Link>
                 </li>
-            </ul> )}
+            </ul>
         </nav>
     )
 }
