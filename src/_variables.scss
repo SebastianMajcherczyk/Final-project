@@ -22,5 +22,16 @@ $gear: '/media';
   transition-timing-function: ease-out;
 }
 
+//hamburger lines definition
+
+@mixin hamburgerLine {
+  width: 40px;
+  height: 6px;
+  border-radius: 6px;
+  border: 0;
+  position: absolute;
+  background-color: black;
+  transition: all .5s ease-in-out;
+}
 
 

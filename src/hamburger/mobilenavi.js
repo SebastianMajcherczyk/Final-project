@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import {HashLink} from "react-router-hash-link";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars, faGear, faXmark} from "@fortawesome/free-solid-svg-icons";
+import {BtnHamburger} from './btn-hamburger/btn-hamburger';
 
 
 
@@ -12,10 +13,15 @@ const Mobilenavi = () => {
     const changeMenu = () => {
         setMenuOpen(!menuOpen);
     }
+    
 
     return(
-        <nav className={`mobile-navbar ${menuOpen === undefined ? '' : menuOpen ? 'open' : 'hidden'}`}>
-            <button className="nav-btn" onClick={changeMenu}><FontAwesomeIcon icon={menuOpen  ? faXmark : faBars} /></button>
+        <nav className={`mobile-navbar ${menuOpen === undefined ? '' : menuOpen ? 'open' : 'hidden'}`} >
+            <div className="menu-btn"  onClick={changeMenu}>
+                <button className="btn-burger"></button>
+            </div>
+            {/*Hambrger menu created from Fontawesome Icons*/}
+            {/*<button className="nav-btn" onClick={changeMenu}><FontAwesomeIcon icon={menuOpen  ? faXmark : faBars} /></button>*/}
 
             <ul className={`mobilenavi ${menuOpen === undefined ? '' : menuOpen ? 'open' : 'hidden'}`} >
                 <li >
@@ -50,6 +56,7 @@ const Mobilenavi = () => {
                 </li>
             </ul>
         </nav>
+
     )
 }
 
