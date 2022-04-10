@@ -87,7 +87,7 @@ const Gallery = () => {
                 {/*    <li className="img img8"><a href="9.jpg"><img src={require('./9.jpg')} alt="8"/></a></li>*/}
                 {/*</ul>*/}
             </div>
-            <ImageGallery items={images} lazyLoad={true} showNav={true} showFullscreenButton={false} showBullets={true} showThumbnails={true}  />
+            <ImageGallery items={images} lazyLoad={true} showNav={true} showFullscreenButton={false} showBullets={true} showThumbnails={false}  />
         </section>
 
     )

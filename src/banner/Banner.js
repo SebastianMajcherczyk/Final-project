@@ -3,7 +3,10 @@ import './_banner.scss'
 
 const Banner = () => {
     return(
-        <div className='banner'></div>
+        <div className='banner'>
+
+        </div>
+
     )
 
 }
