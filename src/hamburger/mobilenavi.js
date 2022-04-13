@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import './mobilenavi.scss';
+import style from './mobilenavi.scss';
 import {Link} from "react-router-dom";
 import {HashLink} from "react-router-hash-link";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -17,9 +17,12 @@ const Mobilenavi = () => {
 
     return(
         <nav className={`mobile-navbar ${menuOpen === undefined ? '' : menuOpen ? 'open' : 'hidden'}`} >
-            <div className="menu-btn"  onClick={changeMenu}>
-                <button className="btn-burger"></button>
-            </div>
+            {/*<div className="menu-btn"  onClick={changeMenu}>*/}
+            {/*    <button className="btn-burger"></button>*/}
+            {/*</div>*/}
+                <BtnHamburger toChange={changeMenu}/>
+
+
             {/*Hambrger menu created from Fontawesome Icons*/}
             {/*<button className="nav-btn" onClick={changeMenu}><FontAwesomeIcon icon={menuOpen  ? faXmark : faBars} /></button>*/}
 

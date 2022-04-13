@@ -6,6 +6,11 @@ import {faLocationDot} from "@fortawesome/free-solid-svg-icons";
 import {faPhone} from "@fortawesome/free-solid-svg-icons";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import './Contact.scss';
+import ReCAPTCHA from "react-google-recaptcha";
+
+
+
+
 
 
 
@@ -19,6 +24,14 @@ const Contact = () =>  {
     const buttonText = 'Wyślij'
 
     const [submitButtonText, setSubmitButton] = useState(buttonText)
+    const [sendButtonDisabled, setSendButtonState] = useState(true);
+
+
+    const onChange = (event) => {
+        console.log(event);
+        setSendButtonState( event ? false : true );
+        console.log("Captcha verified")
+    }
     const [toSend, setToSend] = useState(emptyForm);
 
     const onSubmit = (e) => {
@@ -77,7 +90,11 @@ const Contact = () =>  {
                     value={toSend.reply_to}
                     onChange={handleChange}
                 />
-                <button type='submit'>{submitButtonText}</button>
+                <ReCAPTCHA
+                    sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
+                    onChange={onChange}
+                />
+                <button type='submit' disabled={sendButtonDisabled} className={sendButtonDisabled? 'disabled' : 'enabled'}>{submitButtonText}</button>
             </form>
             <div className="contact-data">
                 <p>

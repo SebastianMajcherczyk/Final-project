@@ -19,7 +19,18 @@
       padding: 10px 10px;
       margin-bottom: 10px;
     }
-    [type='submit']{
+
+
+      [type='submit'].disabled{
+        background-color: $fifth-color;
+        font-size: 1.2em;
+        color: white;
+        border: 0;
+        width: 200px;
+        margin-left: 0;
+
+      }
+    [type='submit'].enabled{
       background-color: $first-color;
       font-size: 1.2em;
       color: white;
@@ -30,6 +41,7 @@
       &:hover{
         background-color: $second-color;
       }
+
     }
     [name="message"]{
       height: 150px;
