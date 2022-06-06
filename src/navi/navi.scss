@@ -29,6 +29,7 @@
   align-items: center;
   justify-content: center;
   height: 60px;
+  border-radius: 10px;
   flex-grow: 1 ;
   margin: 3px;
   background-color: #fff;
@@ -42,7 +43,7 @@
 };
 .navi li:hover {
 
-  background-color: $second-color;
+  background-color: $first-color;
   .a{
     color: white;
   }
@@ -50,5 +51,5 @@
 }
 
 .navi li:first-child{
-  background-color: $second-color;
+  background-color: $first-color;
 }

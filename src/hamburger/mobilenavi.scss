@@ -11,23 +11,23 @@
   z-index: 5;
 }
 
-@keyframes extend {
+@keyframes grow {
 
   to {
-    max-height: 300px;
-    padding-bottom: 50px;
+    height: 250px;
+    //padding-bottom: 50px;
   }
 
 }
 
-@keyframes shrink {
+@keyframes collapse {
   from {
-    max-height: 300px;
-    padding-bottom: 50px;
+    height: 250px;
+    //padding-bottom: 50px;
   }
 
   to {
-    max-height: 50px;
+    height: 50px;
   }
 
 }
@@ -58,18 +58,18 @@
     flex-direction: column;
     align-items: center;
     z-index: 1;
-    max-height: 50px;
+    height: 50px;
     overflow: hidden;
 
     &.open {
-      animation: extend;
+      animation: grow;
       animation-duration: 1s;
       animation-fill-mode: both;
 
     }
 
     &.hidden {
-      animation: shrink;
+      animation: collapse;
       animation-duration: 1s;
       animation-fill-mode: both;
     }

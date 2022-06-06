@@ -8,7 +8,7 @@ $fa-font-path: "~font-awesome/fonts";
   margin: auto;
   padding: 10px;
   color: #fff;
-  background-color: $first-color;
+  background-color: $fourth-color;
   z-index: 5;
     .container{
       margin: auto;
@@ -33,7 +33,7 @@ $fa-font-path: "~font-awesome/fonts";
   }
 }
 .btn-search {
-    background-color: $first-color;
+    background-color: $fourth-color;
     border: solid $fifth-color;
     border-width: 0 0 2px 0;
     padding: 8px 32px 8px 13px;
@@ -49,7 +49,7 @@ $fa-font-path: "~font-awesome/fonts";
 }
 .magnify{
   font-size: 1.2em;
-  background-color: $first-color;
+  background-color: $fourth-color;
   color: #fff;
   border: 0;
   position: relative;

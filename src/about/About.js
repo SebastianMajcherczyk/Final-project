@@ -15,31 +15,33 @@ const About = () => {
                 <div className="abt-top">
                 <div className=" ab-lft">
                     <h4>Przykładowe realizacje indywidualne.</h4>
-                    <p> 1. Import faktur zakupu i sprzedaży
-                        2. Import dokumentów magazynowych
-                        3. Import wyciągów bankowych
-                        4. Zestawienia wysyłane cyklicznie do ustalonych odbiorców
-                        5. Dostęp online do wybranych danych</p>
+                    <ul>
+                        <li>Import faktur zakupu i sprzedaży</li>
+                        <li>Import dokumentów magazynowych </li>
+                        <li>Import wyciągów bankowych</li>
+                        <li>Zestawienia wysyłane cyklicznie do ustalonych odbiorców </li>
+                        <li>Dostęp online do wybranych danych</li>
+                    </ul>
                 </div>
                 <div className="ab-lft">
                     <h4>Modele i zasady współpracy</h4>
-                    <p>Lorem ipsum dolor sit amet, conse etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                        ut laoreet dolore magn aliquam erat volutpat massa dolore.</p>
+                    <p>Wszystkie usługi wykonujemy na zasadzie B2B.</p>
+                    <p>Jesteśmy do dyspozycji między 9-16 od poniedziałku do czwartku.</p>
                 </div>
                 </div>
 
                 <div className="abt-bottom">
                     <div className="ab-lft">
                         <h4>Wsparcie w zakresie księgowości i programowania</h4>
-                        <p>Lorem ipsum dolor sit amet, conse etuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magn aliquam erat volutpat massa dolore.</p>
+                        <ul>
+                            <li>Współpraca z biurem rachunkowym.</li>
+                            <li>Informatyzacja procesów księgowych w firmie.</li>
+                        </ul>
                     </div>
                     <div className="ab-lft">
-                        <h4>COMMUNICATIONS</h4>
-                        <p>Lorem ipsum dolor sit amet, conse etuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magn aliquam erat volutpat massa dolore Lorem ipsum dolor sit amet, conse etuer
-                            adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                            magn aliquam erat volutpat massa dolore.</p>
+                        <h4>Komunikacja</h4>
+                        <p>Większość tematów realizujemy za pomocą teamviera.</p>
+                        <p>Lubimy też telefon i maila.</p>
                     </div>
 
                 </div>

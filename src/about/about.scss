@@ -6,7 +6,7 @@
   padding: 70px 0;
   font-size: 14px;
   h4 {
-    color: $second-color;
+    color: $first-color;
     font-size: 1.3em;
     font-weight: 500;
     margin: 0;
@@ -76,6 +76,12 @@
     color: $first-color;
     margin: 0 0 1em 0;
     font-weight: 500;
+
+  }
+  ul{
+    list-style: circle;
+    color: $fourth-color;
+    line-height: 1.5em;
 
   }
   p{

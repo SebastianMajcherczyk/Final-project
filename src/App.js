@@ -51,7 +51,6 @@ function App() {
                         <Route exact path="/rates"  component={ExchangeRates}/>
                         <Route exact path="*"  component={CustomRedirect}/>
                     </Switch>
-                
                 </div>
         </Router>
           
