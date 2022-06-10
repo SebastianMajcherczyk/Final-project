@@ -6,6 +6,7 @@
   height: 100px;
   color: $first-color;
   padding: 10px 0;
+  transition: 1s;
 }
 .service {
   height: 100%;
@@ -46,6 +47,9 @@
         background-color: $first-color;
         h4 {
           color: #ffffff;
+        }
+        .gear{
+          color:#ffffff
         }
       }
     }

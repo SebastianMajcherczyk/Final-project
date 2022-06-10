@@ -8,7 +8,7 @@ $fa-font-path: "~font-awesome/fonts";
   margin: auto;
   padding: 10px;
   color: #fff;
-  background-color: $fourth-color;
+  background-color: $header-background;
   z-index: 5;
     .container{
       margin: auto;
@@ -25,6 +25,10 @@ $fa-font-path: "~font-awesome/fonts";
 
       }
   }
+}
+
+.phonenumber {
+  color:#000
 }
 
 @media (max-width: $first-mediabreakpoint) {

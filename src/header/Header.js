@@ -23,11 +23,11 @@ const Header = () => {
         <header className="header">
             <div className="container">
                 <img src={LogoFK} alt={"Logo Franz Kruger"}/>
-                <div>
+                <div className='phonenumber'>
                     <h3>Phone number</h3>
                     <h3>+48 555 767 676</h3>
                 </div>
-                <SearchBar/>
+                {/* <SearchBar/> */}
             </div>
         </header>
     )
