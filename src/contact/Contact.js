@@ -265,14 +265,14 @@ const Contact = () =>  {
                     onChange={onCapchaChange}
                 />
                 <p className={'error-text'}>{formState.capcha.errors}</p>
-                <button type='submit' disabled={sendButtonDisabled} className={sendButtonDisabled? 'disabled' : 'enabled'}>{sendButtonDisabled ? 'Popraw dane' : 'Wyslij'}</button>
+                <button type='submit' disabled={sendButtonDisabled} className={sendButtonDisabled? 'disabled' : 'enabled'}>{sendButtonDisabled ? 'Uzupełnij dane' : 'Wyslij'}</button>
             </form>
             <div className="contact-data">
  
                 <div className="contact-list">
                     <span className="post-address"><FontAwesomeIcon icon={faLocationDot}/>  UL. JANA ROSOŁA 44  NR 5
                         02-786 WARSZAWA</span>
-                    <span className="phone-number"><FontAwesomeIcon icon={faPhone}/><a href='tel:+48555767676'>  +48 555 767 676</a> </span>
+                    <span className="phone-number"><FontAwesomeIcon icon={faPhone}/><a href='tel:+48555767676'>+ 48 555 767 676</a> </span>
                     <span className="email"><FontAwesomeIcon icon={faEnvelope}/>  franz.kruger@example.com</span>
                 </div>
             </div>
