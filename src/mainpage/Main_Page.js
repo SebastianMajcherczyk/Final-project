@@ -6,6 +6,7 @@ import {Services} from "../services/Services";
 import {Gallery} from "../gallery/Gallery";
 import {Contact} from "../contact/Contact";
 import {Mobilenavi} from "../hamburger/mobilenavi";
+import { Faq } from '../faq/faq';
 
 
 
@@ -17,6 +18,7 @@ const Main_Page = () => {
             <Services/>
             <Gallery/>
             <Contact/>
+            <Faq />
         </>
     )
 }
