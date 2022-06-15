@@ -18,7 +18,6 @@ const Main_Page = () => {
             <Services/>
             <Gallery/>
             <Contact/>
-            <Faq />
         </>
     )
 }
